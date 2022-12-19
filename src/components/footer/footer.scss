@@ -1,0 +1,55 @@
+footer{
+    *{
+        margin: 0;
+    }
+    background-color: #292438;
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 1rem;
+        .lets-flex{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    
+        .flex{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            >div{
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+               }
+        }
+    }
+   
+
+   
+}
+
+
+// Media Queries
+
+@media screen and (max-width:992px) {
+    footer{
+        .grid{
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 3rem;
+        }
+    }
+}
+
+
+@media screen and (max-width:417px) {
+    footer{
+        .grid{
+            grid-template-columns: repeat(1,1fr);
+            row-gap: 3rem;
+        }
+    }
+}
+
+
+
